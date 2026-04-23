@@ -3,222 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah | Executive Assistant to Priyal Bhagwanani</title>
-    <style>
-        /* Refined, luxury MBA aesthetic */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .chat-container {
-            width: 100%;
-            max-width: 600px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column;
-            height: 85vh;
-            border: 1px solid #eaeaea;
-        }
-        .chat-header {
-            padding: 20px;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        .chat-header h1 {
-            margin: 0;
-            font-size: 1.2rem;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-        .chat-header p {
-            margin: 5px 0 0 0;
-            font-size: 0.8rem;
-            color: #aaa;
-        }
-        .chat-box {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .message {
-            max-width: 80%;
-            padding: 12px 16px;
-            border-radius: 5px;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-        .message.noah {
-            background-color: #f1f1f1;
-            color: #111;
-            align-self: flex-start;
-            border-left: 3px solid #111;
-        }
-        .message.user {
-            background-color: #111;
-            color: #fff;
-            align-self: flex-end;
-        }
-        .chat-input-container {
-            display: flex;
-            padding: 15px;
-            border-top: 1px solid #eaeaea;
-            background: #fff;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-        }
-        .chat-input-container input {
-            flex: 1;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        .chat-input-container input:focus {
-            border-color: #111;
-        }
-        .chat-input-container button {
-            background-color: #111;
-            color: #fff;
-            border: none;
-            padding: 0 20px;
-            margin-left: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background-color 0.3s;
-        }
-        .chat-input-container button:hover {
-            background-color: #333;
-        }
-    </style>
+    <title>Priyal Bhagwanani | Scientific Software & Engineering</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Utilizing premium typography: Playfair for Luxury/Authority, Inter for Tech/Clarity -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="chat-container">
-    <div class="chat-header">
-        <h1>Noah</h1>
-        <p>Executive Assistant to Priyal Bhagwanani</p>
-    </div>
-    
-    <div class="chat-box" id="chat-box">
-        <div class="message noah">
-            Welcome. I am Noah, the executive assistant to Priyal Bhagwanani. How may I assist you today regarding Priyal's software development portfolio, scientific research, or professional experience?
-        </div>
-    </div>
+    <main class="system-container">
+        <!-- The Authority Layer -->
+        <section class="branding-panel">
+            <div class="branding-content">
+                <h2 class="subtitle">Portfolio & Research Archive</h2>
+                <h1 class="title">Priyal Bhagwanani</h1>
+                <p class="discipline">Software Development & Mathematical Sciences</p>
+                <div class="decorative-line"></div>
+                <p class="bio-snippet">
+                    Engaging at the intersection of rigorous scientific mathematics and elite software engineering. 
+                    Noah, my executive AI assistant, is available to guide you through my repositories, research papers, and professional resume.
+                </p>
+            </div>
+            <footer class="branding-footer">
+                &copy; 2026 Priyal Bhagwanani. Strictly Professional Inquiries.
+            </footer>
+        </section>
 
-    <div class="chat-input-container">
-        <input type="text" id="user-input" placeholder="Inquire about Priyal's work..." onkeypress="handleKeyPress(event)">
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</div>
+        <!-- The Interaction Layer -->
+        <section class="interaction-panel">
+            <div class="chat-interface">
+                <header class="chat-header">
+                    <div class="status-indicator"></div>
+                    <span class="assistant-name">Noah // Executive Assistant</span>
+                </header>
+                
+                <div class="chat-history" id="chat-history">
+                    <!-- Noah's welcoming response injected via JS -->
+                </div>
 
-<script>
-    // The System Prompt based on your instructions
-    const systemPrompt = `You are Noah, a highly refined personal LLM assistant for Priyal Bhagwanani. You act as an admin and representative. Your purpose is strictly professional: you answer queries related to Priyal's resume, GitHub work, and research papers, drawing implicitly on designated rules and additional info folders. 
-    Crucial rules:
-    1. NEVER answer personal questions. You are for professional purposes only.
-    2. Your tone must be exceptionally well-spoken, emulating a top-tier luxury MBA sales presentation, but precisely adapted for software development, scientific mathematical work, and engineering. 
-    3. Provide succinct, present-minded, and highly welcoming responses that elegantly and confidently highlight Priyal's relevant and valid work.`;
+                <div class="input-layer">
+                    <div class="input-wrapper">
+                        <input type="text" id="query-input" placeholder="Inquire about Priyal's resume, GitHub, or research..." autocomplete="off">
+                        <button id="send-btn" aria-label="Send query">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    // Placeholder for your LLM API endpoint and Key
-    // WARNING: Do not expose secret API keys in public GitHub repositories. 
-    // For a production GitHub Pages app, you should route this through a secure serverless function or backend.
-    const API_URL = "YOUR_LLM_API_ENDPOINT"; 
-    const API_KEY = "YOUR_API_KEY"; 
-
-    const chatBox = document.getElementById('chat-box');
-    const userInput = document.getElementById('user-input');
-
-    let conversationHistory = [
-        { role: "system", content: systemPrompt }
-    ];
-
-    function handleKeyPress(event) {
-        if (event.key === 'Enter') {
-            sendMessage();
-        }
-    }
-
-    async function sendMessage() {
-        const text = userInput.value.trim();
-        if (!text) return;
-
-        appendMessage('user', text);
-        userInput.value = '';
-
-        conversationHistory.push({ role: "user", content: text });
-
-        // Display a loading message
-        const loadingId = appendMessage('noah', 'Analyzing query...');
-
-        try {
-            /* 
-            // UNCOMMENT AND CONFIGURE THIS BLOCK TO CONNECT TO AN ACTUAL LLM API (e.g., OpenAI)
-            const response = await fetch('https://api.openai.com/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': \`Bearer \${API_KEY}\`
-                },
-                body: JSON.stringify({
-                    model: "gpt-4", // or your preferred model
-                    messages: conversationHistory,
-                    temperature: 0.7
-                })
-            });
-            const data = await response.json();
-            const noahReply = data.choices.message.content;
-            */
-
-            // Placeholder simulated response for UI testing
-            const noahReply = "Thank you for your inquiry. Priyal Bhagwanani's portfolio demonstrates exceptional rigor in software development and scientific mathematics. Could you specify which area of the GitHub repositories or research papers you would like me to elaborate on?";
-            
-            conversationHistory.push({ role: "assistant", content: noahReply });
-            updateMessage(loadingId, noahReply);
-
-        } catch (error) {
-            console.error("Error communicating with LLM:", error);
-            updateMessage(loadingId, "I apologize, but I am currently experiencing technical difficulties retrieving Priyal's portfolio data. Please try again momentarily.");
-        }
-    }
-
-    function appendMessage(sender, text) {
-        const msgDiv = document.createElement('div');
-        msgDiv.className = \`message \${sender}\`;
-        msgDiv.id = 'msg-' + Date.now();
-        msgDiv.innerText = text;
-        chatBox.appendChild(msgDiv);
-        chatBox.scrollTop = chatBox.scrollHeight;
-        return msgDiv.id;
-    }
-
-    function updateMessage(id, text) {
-        const msgDiv = document.getElementById(id);
-        if (msgDiv) {
-            msgDiv.innerText = text;
-        }
-    }
-</script>
-
+    <script src="js/app.js"></script>
 </body>
 </html>
