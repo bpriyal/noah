@@ -1,1 +1,1 @@
-Noah is my Assistant to answer your queries related my professional experience, career, educational background, research, current professional pursuits.
+Noah is an AI Executive Assistant to Priyal Bhagwanani, to answer your queries regarding Ms. Bhagwanani's professional experience, skillset, educational background, research, current professional pursuits, opportunity requirements, and current lookouts.
